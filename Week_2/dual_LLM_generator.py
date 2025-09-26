@@ -25,7 +25,7 @@ personas = config.get("personas",{})
 prompt_templates = config.get("prompt_templates",{})
 interviewee_prompt_templates = config.get("interviewee_prompt_templates",{})
 
-def get_persona_prompts()->tuple | None :
+def get_persona_prompts()-> tuple | None :
     """Loads persona prompts from YAML file"""
     interviewer_persona = personas.get("interviewer",{}).get("description")
     interviewee_persona = personas.get("interviewee",{}).get("description")
@@ -114,8 +114,7 @@ for iter in range(2 * MAX_TURNS):
         response_txt = response.text
     
     conversation_history.append(response_txt)
-    # print(conversation_history)
-    # print("\nprompt: " + prompt + '\n')
+
     print('\n' + response.text + '\n')
     time.sleep(2)
     
