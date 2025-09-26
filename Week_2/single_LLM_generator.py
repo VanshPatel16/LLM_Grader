@@ -1,30 +1,44 @@
 import google.generativeai as genai
 from dotenv import load_dotenv
-import os
+import os,sys
+import yaml
 load_dotenv()
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-GENERATOR_PROMPT = """
-    You're an interview simulation agent. You've to generate and interview given a topic. You've to play two roles alternatively.
-    1. Interviewer
-    2. Interviewee
 
-    INTERVIEW PERSONA : He's a senior engineer at a large MNC. He is a system design expert. His job is to ask conceptual questions with increasing depth, to assess the candidate accordingly. He will try to make the candidate feel comfortable by being helping in nature.
+def load_config(filepath="single_LLM_gen_prompts.yaml"):
+    """Loads YAML config file"""
+    try:
+        with open(filepath,'r') as f : 
+            return yaml.safe_load(f)
+        
+    except FileNotFoundError : 
+        print("File not found!")
+        sys.exit(1)
 
-    INTERVIEWEE PERSONA : He's a new gradute interviewing for a large MNC. He is a sharp candidate clear in his thoughts and concepts, he will try to answer the questions to the best of his ability, and he will correct his mistakes if given a hint. He's confident and answers to the point. Even though he is clear in his thoughts, he may stutter once in a while, using filler phrases like  : [Okay, hmm, maybe, I guess, etc.]
 
-    Strictly follow the format :
+config = load_config()
+personas = config.get("personas",{})
+prompt_templates = config.get("prompt_templates",{})
 
-    Interviewer : ....
-    Interviewee : ....
+def get_prompt(topic: str) -> str | None:
+    interviewer_persona = personas.get("interviewer",{}).get("description")
+    interviewee_persona = personas.get("interviewee",{}).get("description")
+    template = prompt_templates.get("generator_prompt",{}).get("template")
 
-    End the interview in 6-12 turns. Keep the last dialogues to be conclusive. And greeting thanks.
+    return template.format(
+        interviewer_persona=interviewer_persona,
+        interviewee_persona=interviewee_persona,
+        topic=topic
+    )
 
-"""
+TOPIC = "Design a URL shortening service like TinyURL"
+
+GENERATOR_PROMPT = get_prompt(TOPIC)
 
 model = genai.GenerativeModel(model_name="gemini-2.5-flash",system_instruction=GENERATOR_PROMPT)
 
-output = model.generate_content("TOPIC : Design a url shortening service like TinyURL")
+output = model.generate_content(GENERATOR_PROMPT)
 
 print(output.text)
