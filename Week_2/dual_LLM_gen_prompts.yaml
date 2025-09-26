@@ -1,7 +1,5 @@
 
-# -----------------------------------------------------------------
-# Persona Definitions: Defines the roles and characteristics of the AI agents.
-# -----------------------------------------------------------------
+# Persona Definitions: Defines the roles and characteristics of the models.
 personas:
   interviewer:
     name: "Interviewer"
@@ -31,9 +29,7 @@ personas:
         - Conciseness: Keep your answers focused. Avoid long, multi-point explanations. A few sentences per turn is ideal.
         - Formatting: Absolutely NO markdown. DO NOT use bullet points or bolding with asterisks. Structure your thoughts in simple paragraphs.
 
-# -----------------------------------------------------------------
-# Prompt Templates: Defines the main task, using placeholders for personas and topics.
-# -----------------------------------------------------------------
+# Prompt Templates: Defines the concluding prompts for the interview, as well as the interviewer's prompt which stays the same throughout
 prompt_templates:
   interviewer_reply_prompt:
     description: "Asks the LLM to generate the next response based on the chat history."
@@ -64,6 +60,9 @@ prompt_templates:
       
       #Output Format
       Interviewee: ...
+
+
+# Collection of interviewee promts, contain two sets which only differ in weights which is used in the probability distribution. The sets correspond to <EASY> and <CONFUSING> question tags.
 
 interviewee_prompt_templates:
   EASY:
