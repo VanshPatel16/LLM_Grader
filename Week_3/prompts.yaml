@@ -13,10 +13,12 @@ personas:
         - Interaction: Don't just list questions. React to the candidate's previous answer before asking your next question.
 
         # Question Classification:
-        At the very end of every question you ask, you MUST append a difficulty token. Use `<EASY>` for straightforward, single-part questions. Use `<CONFUSING>` for complex, multi-part, or abstract design questions.
+        At the very end of every question you ask, you MUST append a difficulty token. Use `<EASY>` for straightforward, single-part questions. Use `<MEDIUM>` for slightly trickier and longer, multi-part, or abstract design questions.
+        And `<HARD>` for difficult and challenging questions where you expect the candidate to fumble and get confused.
+        Keep the distribution of difficulty equal.
 
         Example: "What's the difference between SQL and NoSQL? <EASY>"
-        Example: "How would you design the data partitioning and replication strategy for a globally distributed system? <CONFUSING>"
+        Example: "How would you design the data partitioning and replication strategy for a globally distributed system? <HARD>"
 
   interviewee:
     name: "Interviewee"
@@ -45,11 +47,16 @@ prompt_templates:
       #Output Format
       Interviewer: ...
 
+      #NOTE
+      If the conversation has covered enough ground and feels complete after about 5-6 exchanges, you can choose to conclude it naturally. When concluding make sure to output the <END_OF_INTERVIEW> token
+      #Output Format
+      Interviewer: .... <END_OF_INTERVIEW>
+
 
   interviewer_conclude_prompt:
     description: "Asks the Interviewer LLM to conclude the interview."
     template: |
-      This is your final turn as the Interviewer. Conclude the interview in a warm and professional tone. Your response should briefly thank the candidate for their time, and mention that the recruiter will be in touch about the next steps IF He/She performed well . Keep the entire response concise, aiming for 2-3 sentences.
+      This is your final turn as the Interviewer. Conclude the interview in a warm and professional tone. Your response should briefly thank the candidate for their time. Based on the candidate's performance, give either an enthusiastic or a neutral closing statement about the next steps. Keep the entire response concise, aiming for 2-3 sentences.
       #Output Format
       Interviewer: ...
 
@@ -62,80 +69,84 @@ prompt_templates:
       Interviewee: ...
 
 
-# Collection of interviewee promts, contain two sets which only differ in weights which is used in the probability distribution. The sets correspond to <EASY> and <CONFUSING> question tags.
-
+# ----------------------------------------------------------------------------------
+# SECTION 1: Central repository for all interviewee reaction templates.
+# Edit a prompt in ONE place, and it updates for all difficulty levels.
+# ----------------------------------------------------------------------------------
 interviewee_prompt_templates:
-  EASY:
-    clear:
-      weight: 0.65
-      description: |
-        "Asks the interviewee to reply clearly and correctly, as if he/she knows the answer"
-      template: |
-        As a sharp and confident candidate, provide a clear and correct response to the last statement. Keep it concise.
-        #Output Format
-        Interviewee[TYPE]: ...
-    
-    mistunderstood:
-      weight: 0.10
-      description: |
-        "Asks the interviewee to reply, as if he/she misunderstood the question"
-      template: |
-        You've slightly misunderstood the interviewer's last point. Give an intelligent response that is well-structured but based on a slightly incorrect assumption about what was asked.
-        #Output Format
-        Interviewee[TYPE]: ...
+  clear:
+    template: |
+      As a sharp and confident candidate, provide a clear and correct response to the last statement. Keep it concise.
+      #Output Format
+      Interviewee[TYPE]: ...
+  confused:
+    template: |
+      You're a bit confused by the interviewer's last question. Ask a thoughtful clarifying question to show you're engaged but need more detail. Don't provide a solution yet.
+      #Output Format
+      Interviewee[TYPE]: ...
+  misunderstood:
+    template: |
+      You've slightly misunderstood the interviewer's last point. Give an intelligent response that is well-structured but based on a slightly incorrect assumption about what was asked.
+      #Output Format
+      Interviewee[TYPE]: ...
+  wrong:
+    template: |
+      You do not know the answer to this question. But you will answer it confidently and incorrectly.
+      #Output Format
+      Interviewee[TYPE]: ...
 
-    confused:
-      weight: 0.05
-      description: |
-        "Asks the interviewee to reply, as if he/she is confused by the question"
-      template: |
-        You're a bit confused by the interviewer's last question. Ask a thoughtful clarifying question to show you're engaged but need more detail. Don't provide a solution yet.
-        #Output Format
-        Interviewee[TYPE]: ...
-    
-    wrong:
-      weight: 0.20
-      description: |
-        "Asks the interviewee to give an incorrect answer"
-      template: |
-        You do not know the answer to this question, let the interviewer know that.
-        #Output Format
-        Interviewee[TYPE]: ...
+# ----------------------------------------------------------------------------------
+# SECTION 2: Defines the probability distributions for each student persona.
+# This section ONLY contains weights and refers to the templates above.
+# ----------------------------------------------------------------------------------
+student_personas:
+  good_student:
+    EASY:
+      clear: { weight: 0.90 }
+      confused: { weight: 0.05 }
+      misunderstood: { weight: 0.05 }
+      wrong: { weight: 0.00 }
+    MEDIUM:
+      clear: { weight: 0.75 }
+      confused: { weight: 0.15 }
+      misunderstood: { weight: 0.05 }
+      wrong: { weight: 0.05 }
+    HARD:
+      clear: { weight: 0.50 }
+      confused: { weight: 0.35 }
+      misunderstood: { weight: 0.10 }
+      wrong: { weight: 0.05 }
   
-  CONFUSING:
-    clear:
-      weight: 0.20
-      description: |
-        "Asks the interviewee to reply clearly and correctly, as if he/she knows the answer"
-      template: |
-        As a sharp and confident candidate, provide a clear and correct response to the last statement. Keep it concise.
-        #Output Format
-        Interviewee[TYPE]: ...
-    
-    mistunderstood:
-      weight: 0.15
-      description: |
-        "Asks the interviewee to reply, as if he/she misunderstood the question"
-      template: |
-        You've slightly misunderstood the interviewer's last point. Give an intelligent response that is well-structured but based on a slightly incorrect assumption about what was asked.
-        #Output Format
-        Interviewee[TYPE]: ...
+  average_student:
+    EASY:
+      clear: { weight: 0.70 }
+      confused: { weight: 0.10 }
+      misunderstood: { weight: 0.10 }
+      wrong: { weight: 0.10 }
+    MEDIUM:
+      clear: { weight: 0.50 }
+      confused: { weight: 0.30 }
+      misunderstood: { weight: 0.15 }
+      wrong: { weight: 0.05 }
+    HARD:
+      clear: { weight: 0.20 }
+      confused: { weight: 0.50 }
+      misunderstood: { weight: 0.15 }
+      wrong: { weight: 0.15 }
 
-    confused:
-      weight: 0.50
-      description: |
-        "Asks the interviewee to reply, as if he/she is confused by the question"
-      template: |
-        You're a bit confused by the interviewer's last question. Ask a thoughtful clarifying question to show you're engaged but need more detail. Don't provide a solution yet.
-        #Output Format
-        Interviewee[TYPE]: ...
-    
-    wrong:
-      weight: 0.15
-      description: |
-        "Asks the interviewee to give an incorrect answer"
-      template: |
-        You do not know the answer to this question, let the interviewer know that.
-        #Output Format
-        Interviewee[TYPE]: ...
-    
+  poor_student:
+    EASY:
+      clear: { weight: 0.30 } 
+      confused: { weight: 0.10 }
+      misunderstood: { weight: 0.20 }
+      wrong: { weight: 0.40 } 
+    MEDIUM:
+      clear: { weight: 0.10 } 
+      confused: { weight: 0.35 } 
+      misunderstood: { weight: 0.10 }
+      wrong: { weight: 0.45 } 
+    HARD:
+      clear: { weight: 0.02 } 
+      confused: { weight: 0.40 } 
+      misunderstood: { weight: 0.08 }
+      wrong: { weight: 0.50 } 
