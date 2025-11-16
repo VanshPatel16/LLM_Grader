@@ -1,0 +1,767 @@
+[
+  {
+    "id": 51,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 52,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 53,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 0,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 54,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 55,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 0,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 56,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 57,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 58,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 59,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 1,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 60,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 0,
+      "tradeoff_analysis": 0,
+      "adaptability": 0,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 61,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 0,
+      "tradeoff_analysis": 0,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 62,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 0,
+      "adaptability": 0,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 63,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 0,
+      "adaptability": 1,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 64,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 65,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 1,
+      "reliability": 1,
+      "communication": 1,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 66,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 0,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 67,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 0,
+      "technical_depth": 0,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 0,
+      "adaptability": 1,
+      "reliability": 0,
+      "communication": 1,
+      "completeness": 0
+    }
+  },
+  {
+    "id": 68,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 1,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 69,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 70,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 71,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 72,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 2,
+      "adaptability": 1,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 73,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 74,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 75,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 76,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 77,
+    "label": {
+      "problem_understanding": 0,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 78,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 1,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 79,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 80,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 81,
+    "label": {
+      "problem_understanding": 0,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 82,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 83,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 1,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 84,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 0
+    }
+  },
+  {
+    "id": 85,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 2,
+      "scalability_reasoning": 0,
+      "tradeoff_analysis": 1,
+      "adaptability": 1,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 86,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 87,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 0,
+      "tradeoff_analysis": 0,
+      "adaptability": 1,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 88,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 89,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 90,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 0,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 91,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 92,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 93,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 94,
+    "label": {
+      "problem_understanding": 2,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 95,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 96,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 0,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 97,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 1,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 1,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 98,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 1,
+      "architecture_evolution": 1,
+      "technical_depth": 1,
+      "scalability_reasoning": 1,
+      "tradeoff_analysis": 0,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 1
+    }
+  },
+  {
+    "id": 99,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 1,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 100,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 2,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 2
+    }
+  },
+  {
+    "id": 101,
+    "label": {
+      "problem_understanding": 1,
+      "structured_approach": 2,
+      "architecture_evolution": 2,
+      "technical_depth": 2,
+      "scalability_reasoning": 2,
+      "tradeoff_analysis": 1,
+      "adaptability": 2,
+      "reliability": 2,
+      "communication": 2,
+      "completeness": 2
+    }
+  }
+]
